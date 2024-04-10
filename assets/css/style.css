@@ -1,0 +1,132 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-bg-color:white;
+    --main-color:black;
+    --main-font-title:40px;
+    --main-description-color:red;
+}
+.v-dark{
+    --main-bg-color:black;
+    --main-color:white;
+    --main-font-title:40px;
+    --main-description-color:green;
+}
+body{
+    background-color:var(--main-bg-color) ;
+    color:var(--main-color) ;
+}
+hr{
+    margin: 10px 0;
+}
+nav{
+    position: sticky;
+    top: 0;
+    background-color: orangered;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+
+}
+h2{
+    margin: 25px 0;
+}
+nav li{
+
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    display: block;
+}
+nav li:hover{
+    background-color: #792200;
+}
+
+#root{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    width: 70%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(100deg, #F29010 41%, #ED5112 65%);
+    margin: auto;
+    gap: 0 10px;
+    /*transform: translate(0,150px);*/
+}
+
+.img1{
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.6);
+    margin: auto;
+}
+
+.img1 img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.img2{
+    width: 48%;
+
+    text-align: left;
+    padding: 0 10px;
+    transform: scale(1.2);
+    margin-left: 10px;
+    }
+
+.img2 h2 {
+    font-size: var(--main-font-title);
+    padding: 10px 0 0 0;
+}
+
+.img2 h2 span {
+    display: block;
+}
+
+.img2 p {
+    font-size: 17px;
+    padding: 30px 0;
+    color:var( --main-description-color)
+
+}
+
+.button{
+    padding: 20px 0p;
+}
+button{
+    padding: 10px 60px;
+    margin: 10px 10px;
+    background-color: #F29010;
+    border: none;
+    border-radius: 5px;
+}
+.bg-color{
+    position: fixed;
+    right: 0;
+    top: 30%;
+}
+.bg-color img{
+    width: 50px;
+}
